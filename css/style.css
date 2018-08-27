@@ -16,7 +16,7 @@
 	font-family: 'Archivo', sans-serif;
 }
 .abspadding{
-	margin-top: 100px;
+	padding-left: 120px;
 	color: #eae8e8;
 }
 .liborderone{
@@ -35,4 +35,27 @@
 }
 .acolor{
 	color: white;
+}
+.navhover:hover{
+	background-color: #000;
+	transition: .5s;
+}
+.secondshadow{
+	box-shadow: 5px 5px 5px rgba(40, 40, 40, 0.1);
+}
+.secondafont{
+	font-size: 1em;
+	color: #ee3733;
+	font-family: 'Archivo', sans-serif;
+	padding-right: 17px;
+	padding-left: 17px;
+}
+.secondafont:hover{
+	color: #000;
+}
+.flt{
+	float: right;
+}
+.abssize{
+	font-size: 1.2em;
 }
