@@ -13,8 +13,13 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
 
   <!-- Font Awesome, zob. How to Use: https://fontawesome.bootstrapcheatsheets.com -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css"
+        integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css"
+        integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,97 +33,126 @@
 </head>
 <body>
 
-  <!-- brak java scriptu -->
-  <noscript>
-    Do pełnej funkcjonalności strony potrzebujesz włączonej obsługi skryptów.
-    Tu znajdziesz <a href="https://www.enable-javascript.com/pl/" target="_blank">
-    instrukcje, które pozwolą Ci włączyć skrypty w Twojej przeglądarce</a>.
-  </noscript>
+<!-- brak java scriptu -->
+<noscript>
+  Do pełnej funkcjonalności strony potrzebujesz włączonej obsługi skryptów.
+  Tu znajdziesz <a href="https://www.enable-javascript.com/pl/" target="_blank">
+  instrukcje, które pozwolą Ci włączyć skrypty w Twojej przeglądarce</a>.
+</noscript>
 
-  <!-- nieaktualna przeglądarka, zob. dostosowanie: https://browser-update.org/customize.html -->
-  <script>
-    var $buoop = {notify:{e:-6,f:-4,o:-4,s:-2,c:-4},insecure:true,api:5};
-    function $buo_f(){
-      var e = document.createElement("script");
-      e.src = "http://browser-update.org/update.min.js";
-      document.body.appendChild(e);
-    };
-    try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
-    catch(e){window.attachEvent("onload", $buo_f)}
-  </script>
+<!-- nieaktualna przeglądarka, zob. dostosowanie: https://browser-update.org/customize.html -->
+<script>
+  var $buoop = {notify: {e: -6, f: -4, o: -4, s: -2, c: -4}, insecure: true, api: 5};
 
-  <!-- Nagłówek strony: menu, logo, breadcrumbs itp. -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-nav p-3">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="img/logo.png" width="80" height="80">
-        <div class="flt">
-          <span class="textsize textpadding fonttype">Collegium Gostomianum</span><br>
-          <span class="abspadding fonttype abssize">Absolwent</span>
-        </div>
-        
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav navsize fonttype">
-          <li class="nav-item libordertwo navpadding navhover">
-            <a class="nav-link text-white" href="#">Wydarzenia</a>
-          </li>
-          <li class="nav-item liborderone navpadding navhover">
-            <a class="nav-link text-white" href="#">Kontakt</a>
-          </li>
-          <li class="nav-item liborderthree navpadding navhover">
-            <a class="nav-link text-white" href="#">Zaloguj się</a>
-          </li>
-        </ul>
+  function $buo_f() {
+    var e = document.createElement("script");
+    e.src = "http://browser-update.org/update.min.js";
+    document.body.appendChild(e);
+  };
+  try {
+    document.addEventListener("DOMContentLoaded", $buo_f, false)
+  }
+  catch (e) {
+    window.attachEvent("onload", $buo_f)
+  }
+</script>
+
+<!-- Nagłówek strony: menu, logo, breadcrumbs itp. -->
+<nav class="navbar navbar-expand-lg navbar-light bg-dark p-3">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="img/logo.png" width="80" height="80">
+      <div class="flt">
+        <span class="textsize textpadding fonttype">Collegium Gostomianum</span><br>
+        <span class="abspadding fonttype abssize">Absolwent</span>
       </div>
-    </div>  
+
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav navsize fonttype">
+        <li class="nav-item libordertwo navpadding navhover">
+          <a class="nav-link text-white" href="#">Wydarzenia</a>
+        </li>
+        <li class="nav-item liborderone navpadding navhover">
+          <a class="nav-link text-white" href="#">Kontakt</a>
+        </li>
+        <li class="nav-item liborderthree navpadding navhover">
+          <a class="nav-link text-white" href="#">Zaloguj się</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </nav>
 <!-- Podnaglowek strony -->
 <div class="container-fluid bg-white secondshadow p">
   <div class="container">
-   <ul class="nav justify-content-center">
-    <li class="nav-item">
-      <a class="nav-link secondafont libordertwo" href="#">Strona główna</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link secondafont libordertwo" href="#">O szkole</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link secondafont libordertwo" href="#">Galeria</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link secondafont libordertwo" href="#">Historia</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link secondafont libordertwo" href="#">Absolwenci</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link secondafont libordertwo" href="#">Dokumenty</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link secondafont liborderone" href="#">Archiwum</a>
-    </li>
-  </ul>
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link secondafont libordertwo" href="#">Strona główna</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link secondafont libordertwo" href="#">O szkole</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link secondafont libordertwo" href="#">Galeria</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link secondafont libordertwo" href="#">Historia</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link secondafont libordertwo" href="#">Absolwenci</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link secondafont libordertwo" href="#">Dokumenty</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link secondafont liborderone" href="#">Archiwum</a>
+      </li>
+    </ul>
   </div>
 </div>
 
-  <!-- Treść główna -->
-  <div class="container">
+<!-- Treść główna -->
+<div class="container">
 
+</div>
+
+<!-- Stopka strony: copyrights, dodatkowe linki itp. -->
+<div class="container">
+  <div class="text-white bg-dark">
+    <div class="row">
+      <div class="p-5 col-md-12">
+        <i class="material-icons mb-3" style="font-size: 125px">school</i>
+        <h3 class="mb-4">Absolwent
+          <br>
+        </h3>
+        <ul class="list-unstyled">
+          <a href="#" class="text-white">Strona główna</a>
+          <br>
+          <a href="#" class="text-white">Wydarzenia</a>
+          <br>
+          <a href="#" class="text-white">Kontakt</a>
+          <br>
+          <a href="#" class="text-white">Zaloguj się</a>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 mt-4">
+        <p class="text-center">Notka Copyright</p>
+      </div>
+    </div>
   </div>
+</div>
 
-  <!-- Stopka strony: copyrights, dodatkowe linki itp. -->
-  <div class="container">
-
-  </div>
-
-  <!-- jQuery library -->
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <!-- Bootstrap JavaScript and Popper JS (https://popper.js.org) -->
-  <script src="js/bootstrap.bundle.min.js"></script>
+<!-- jQuery library -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<!-- Bootstrap JavaScript and Popper JS (https://popper.js.org) -->
+<script src="js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
