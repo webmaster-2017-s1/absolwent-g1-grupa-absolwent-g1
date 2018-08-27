@@ -1,13 +1,38 @@
-.top{
-	margin: 50px 0px 50px 0px;
+.bg-nav{
+	background-color: #ee3733;
 }
-#logo{
-	font-size: 60px;
+.textsize{
+	font-size: 1.5em;
+	color: white;
 }
-.nav-link{
-	font-size: 25px;
+.textpadding{
+	padding-left: 15px;
 }
-.bgnav{
-	background-color: red;
+.navsize{
+	font-size: 1.2em;
+	color: white;
+}
+.fonttype{
+	font-family: 'Archivo', sans-serif;
+}
+.abspadding{
+	margin-top: 100px;
+	color: #eae8e8;
+}
+.liborderone{
+	border-left: 1px solid #eae8e8;
+	border-right: 1px solid #eae8e8;
+}
+.libordertwo{
+	border-left: 1px solid #eae8e8;
+}
+.liborderthree{
+	border-right: 1px solid #eae8e8;
+}
+.navpadding{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.acolor{
 	color: white;
 }
