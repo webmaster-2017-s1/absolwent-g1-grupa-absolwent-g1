@@ -58,7 +58,7 @@
 </script>
 
 <!-- Nagłówek strony: menu, logo, breadcrumbs itp. -->
-<nav class="navbar navbar-expand-lg navbar-light bg-dark p-3">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top navbackground p-3">
   <div class="container">
     <a class="navbar-brand" href="#">
       <img src="img/logo.png" width="80" height="80">
@@ -146,7 +146,8 @@
 </div>
 
 <!-- Stopka strony: copyrights, dodatkowe linki itp. -->
-<div class="container">
+<div class="container-fluid bg-dark">
+  <div class="container">
   <div class="text-white bg-dark">
     <div class="row">
       <div class="p-5 col-md-4">
@@ -207,10 +208,26 @@
   </div>
 </div>
 
+</div>
+
 <!-- jQuery library -->
 <script src="js/jquery-3.3.1.min.js"></script>
 <!-- Bootstrap JavaScript and Popper JS (https://popper.js.org) -->
 <script src="js/bootstrap.bundle.min.js"></script>
+
+<!-- Skrypty -->
+<script type="text/javascript">
+
+    $(window).on('scroll', function(){
+      if($(window).scrollTop()) {
+        $('nav').addClass('logoscroll');
+      }
+      else{
+        $('nav').removeClass('logoscroll');
+      }
+    });
+    
+</script>
 
 </body>
 </html>

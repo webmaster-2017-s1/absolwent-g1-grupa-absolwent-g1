@@ -38,11 +38,12 @@
 	transition: .5s;
 }
 .secondshadow{
+	margin-top: 123px;
 	box-shadow: 5px 5px 5px rgba(40, 40, 40, 0.1);
 }
 .secondafont{
 	font-size: 1em;
-	color: #ee3733;
+	color: #343a40;
 	font-family: 'Archivo', sans-serif;
 	padding-right: 17px;
 	padding-left: 17px;
@@ -66,3 +67,14 @@
   width: 100%;
 	max-height: 45vh;
 }
+
+.navbackground{
+	background-color: #343a40;
+}
+
+.logoscroll{
+	margin: 10px;
+	height: 100px;
+	transition: .5s;
+}
+
