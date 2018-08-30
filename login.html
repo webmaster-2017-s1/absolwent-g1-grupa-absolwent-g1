@@ -118,14 +118,15 @@
 
 <!-- Treść główna -->
 <div class="container col-md-6 p-5">
-<form>
+Zaloguj się
+  <form>
   <div class="form-group">
-    <label for="email">Adres email:</label>
-    <input type="email" class="form-control" id="email" placeholder="Wprowadź adres email" required>
+    <label for="email-log">Adres email:</label>
+    <input type="email" class="form-control" id="email-log" placeholder="Wprowadź adres email" required>
   </div>
   <div class="form-group">
-    <label for="password">Hasło:</label>
-    <input type="password" class="form-control" id="password" placeholder="Wprowadz hasło" required>
+    <label for="password-log">Hasło:</label>
+    <input type="password" class="form-control" id="password-log" placeholder="Wprowadz hasło" required>
   </div>
   <div class="checkbox">
     <label><input type="checkbox">Zapamiętaj mnie</label>
@@ -137,6 +138,43 @@
   </div>
 </form>
 </div>
+
+<div class="container col-md-6 p-5">
+<form>
+  Zarejestruj się
+  <div class="form-group">
+    <label for="name">Imię:</label>
+    <input type="text" class="form-control" id="name" placeholder="Wprowadź imię" required>
+  </div>
+  <div class="form-group">
+    <label for="surname">Imię:</label>
+    <input type="text" class="form-control" id="surname" placeholder="Wprowadź nazwisko" required>
+  </div>
+  <div class="form-group">
+    <label for="email">Adres email:</label>
+    <input type="email" class="form-control" id="email" placeholder="Wprowadź adres email" required>
+  </div>
+
+  <div class="form-group">
+    <label for="password">Hasło:</label>
+    <input type="password" class="form-control" id="password" placeholder="Wprowadz hasło" required>
+  </div>
+
+  <div class="form-group">
+    <label for="r-password">Powtórz hasło</label>
+    <input type="password" class="form-control" id="r-password" placeholder="Wprowadz ponownie hasło" required>
+  </div>
+
+  <div class="checkbox">
+    <label><input type="checkbox" required>Wyrażam zgodę na przetwarzanie moich danych osobowych.</label>
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox">Chcę otrzymywać informacje o Collegium Gostomianum na adres email.</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Zarejestruj się</button>
+</form>
+</div>
+
 
 <!-- Stopka strony: copyrights, dodatkowe linki itp. -->
 <div class="container">
