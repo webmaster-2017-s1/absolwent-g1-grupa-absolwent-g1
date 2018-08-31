@@ -128,7 +128,7 @@
 
 .title{
 	height: auto;
-	font-size: 1.5em;
+	font-size: 1.25em;
 }
 
 .titletext{
@@ -156,7 +156,7 @@ h1,h2,h3{
 .events{
 	padding: 1%;
 	background-color: #E9E7DA;
-	width: 40%;
+	width: 30%;
 	display: block;
 	float: left;
 	margin: 2% 2% 2% 0;
@@ -165,7 +165,7 @@ h1,h2,h3{
 .news{
 	display: block;
 	float: left;
-	width: 58%;
+	width: 68%;
 	margin: 2% 0 2% 0;
 	background-color: #E9E7DA;
 	padding: 1%;
