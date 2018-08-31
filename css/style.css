@@ -196,3 +196,12 @@ h1,h2,h3{
 	padding-left: 2%;
 	text-align: justify;
 }
+
+@media (max-width: 1300px) {
+    .events{
+        width: 100%;
+    }
+		.news{
+				width: 100%;
+		}
+}
