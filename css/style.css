@@ -68,39 +68,93 @@
 }
 
 .date{
-	width: auto;
+	width: 20%;
 	height: auto;
-	background-color: #999966;
-	margin: 0.5vh;
+	padding: 0;
+	float: left;
+	padding: 3% 2% 3% 2%;
+}
+
+.esubtitles{
+	padding: 5% 0 5% 2%;
+	width: 70%;
+	height: auto;
+	float: right;
 }
 
 .month{
-	background-color: #009933;
+	background-color: #636B46;
+	height: auto;
 	text-align: center;
-	padding: 0.5vh 0 0.5vh 0;
+}
+
+.day{
+	background-color: #CDA34F;
+	height: auto;
+	text-align: center;
+}
+
+.monthtext{
+	margin: 0;
+	padding: 7.5% 0 7.5% 0;
+	font-size: auto;
 }
 
 .daytext{
 	text-align: center;
-	height: auto;
-	display: block;
-	padding: 1vh 0 1vh 0;
+	padding: 15% 0 15% 0;
+	margin: 0;
+	font-size: auto;
 }
 
 .datelist{
-	padding-bottom: 1vh;
+	padding: 1%;
+	font-family: 'Quicksand', sans-serif;
+	width: 100%;
+	height: auto;
+	margin: 0;
 }
 
 .title{
-	height: 40%;
+	height: auto;
 	font-size: 1.5em;
 }
 
+.titletext{
+	padding: 1% 0 1% 0;
+}
+
 .time{
-	height: 60%;
+	height: auto;
 }
 
 .timetext{
-	padding: 1vh 0 1vh 0;
+	padding: 1% 0 1% 0;
+}
+
+h1,h2,h3{
+	font-family: 'Sansita', sans-serif;
+}
+
+.eheading{
+	text-align: center;
+	font-size: 2em;
+}
+
+.events{
+	padding: 1%;
+	background-color: #E9E7DA;
+	width: 40%;
 	display: block;
+	float: left;
+	margin: 2% 0 2% 0;
+}
+
+.test{
+	display: block;
+	float: left;
+}
+
+.clear{
+	clear: both;
 }

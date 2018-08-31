@@ -117,15 +117,27 @@
 </div>
 
 <!-- Treść główna -->
-<div class="container col-md-6 p-5">
-<form>
+
+<!--TODO Poprawienie responsywności-->
+
+<div class="container col-md-6 px-4 py-5">
+
+  <div class="container col-lg-6 px-5">
+  <button class="btn btn-secondary mr-3" id="login">Zaloguj się</button>
+  <button class="btn btn-secondary ml-3" id="signin">Zarejestruj się</button>
+  </div>
+  <hr>
+
+<div class="container col-md-6 px-5" id="log-form" style="display: block">
+Zaloguj się
+  <form>
   <div class="form-group">
-    <label for="email">Adres email:</label>
-    <input type="email" class="form-control" id="email" placeholder="Wprowadź adres email" required>
+    <label for="email-log">Adres email:</label>
+    <input type="email" class="form-control" id="email-log" placeholder="Wprowadź adres email" required>
   </div>
   <div class="form-group">
-    <label for="password">Hasło:</label>
-    <input type="password" class="form-control" id="password" placeholder="Wprowadz hasło" required>
+    <label for="password-log">Hasło:</label>
+    <input type="password" class="form-control" id="password-log" placeholder="Wprowadz hasło" required>
   </div>
   <div class="checkbox">
     <label><input type="checkbox">Zapamiętaj mnie</label>
@@ -138,72 +150,111 @@
 </form>
 </div>
 
-<!-- Stopka strony: copyrights, dodatkowe linki itp. -->
-<div class="container">
-  <div class="text-white bg-dark">
-    <div class="row">
-      <div class="p-5 col-md-4">
-        <i class="material-icons mb-3" style="font-size: 125px">school</i>
-        <h3 class="mb-4">Absolwent
-          <br>
-        </h3>
-        <ul class="list-unstyled">
-          <a href="#" class="text-white">Strona główna</a>
-          <br>
-          <a href="#" class="text-white">Wydarzenia</a>
-          <br>
-          <a href="#" class="text-white">Zaloguj się</a>
-        </ul>
-      </div>
-      <div class="p-5 col-md-8">
-        <h3>Chcesz być na bieżąco?</h3>
-        <form class="my-4">
-          <fieldset class="form-group">
-            Otrzymuj informacje o Collegium Gostomianum
-            <br>
-            <input type="email" class="form-control" placeholder="Podaj email"></fieldset>
-          <button type="submit" class="btn btn-outline-light">Wyślij</button>
-        </form>
-        <h3 class="mt-5">Kontakt
-          <br>
-        </h3>
-        <div class="col-12 my-3 px-0">
-          I Liceum Ogólnokształcące Collegium Gostomianum
-          <br>
-          ul. Jana Długosza 7
-          <br>
-          27-600 Sandomierz
-        </div>
-
-        <div class="row my-2 px-3">
-
-          <div class="col-lg-6 my-3 px-0">
-          <i class="fas fa-phone"></i>
-          <a href="tel:158325246" class="text-white">(15) 832-52-45</a>
-          </div>
-
-          <div class="col-lg-6 my-3 px-0">
-            <i class="fas fa-envelope"></i>
-            <a href="mailto:1losand@lo1.sandomierz.pl" class="text-white">1losand@lo1.sandomierz.pl</a>
-          </div>
-
-        </div>
-
-
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12 mt-4">
-        <p class="text-center">© Copyright 2018 Marcin Zasuwa, Marcin Saja, Piotr Nowak - Wszelkie Prawa Zastrzeżone.</p>
-      </div>
-    </div>
+<div class="container col-md-6 px-5" id="sign-form" style="display: none">
+<form>
+  Zarejestruj się
+  <div class="form-group">
+    <label for="name">Imię:</label>
+    <input type="text" class="form-control" id="name" placeholder="Wprowadź imię" required>
   </div>
+  <div class="form-group">
+    <label for="surname">Imię:</label>
+    <input type="text" class="form-control" id="surname" placeholder="Wprowadź nazwisko" required>
+  </div>
+  <div class="form-group">
+    <label for="email">Adres email:</label>
+    <input type="email" class="form-control" id="email" placeholder="Wprowadź adres email" required>
+  </div>
+
+  <div class="form-group">
+    <label for="password">Hasło:</label>
+    <input type="password" class="form-control" id="password" placeholder="Wprowadz hasło" required>
+  </div>
+
+  <div class="form-group">
+    <label for="r-password">Powtórz hasło</label>
+    <input type="password" class="form-control" id="r-password" placeholder="Wprowadz ponownie hasło" required>
+  </div>
+
+  <div class="checkbox">
+    <label><input type="checkbox" required>Wyrażam zgodę na przetwarzanie moich danych osobowych.</label>
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox">Chcę otrzymywać informacje o Collegium Gostomianum na adres email.</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Zarejestruj się</button>
+</form>
 </div>
+
+</div>
+<!-- Stopka strony: copyrights, dodatkowe linki itp. -->
+<!--<div class="container">-->
+  <!--<div class="text-white bg-dark">-->
+    <!--<div class="row">-->
+      <!--<div class="p-5 col-md-4">-->
+        <!--<i class="material-icons mb-3" style="font-size: 125px">school</i>-->
+        <!--<h3 class="mb-4">Absolwent-->
+          <!--<br>-->
+        <!--</h3>-->
+        <!--<ul class="list-unstyled">-->
+          <!--<a href="#" class="text-white">Strona główna</a>-->
+          <!--<br>-->
+          <!--<a href="#" class="text-white">Wydarzenia</a>-->
+          <!--<br>-->
+          <!--<a href="#" class="text-white">Zaloguj się</a>-->
+        <!--</ul>-->
+      <!--</div>-->
+      <!--<div class="p-5 col-md-8">-->
+        <!--<h3>Chcesz być na bieżąco?</h3>-->
+        <!--<form class="my-4">-->
+          <!--<fieldset class="form-group">-->
+            <!--Otrzymuj informacje o Collegium Gostomianum-->
+            <!--<br>-->
+            <!--<input type="email" class="form-control" placeholder="Podaj email"></fieldset>-->
+          <!--<button type="submit" class="btn btn-outline-light">Wyślij</button>-->
+        <!--</form>-->
+        <!--<h3 class="mt-5">Kontakt-->
+          <!--<br>-->
+        <!--</h3>-->
+        <!--<div class="col-12 my-3 px-0">-->
+          <!--I Liceum Ogólnokształcące Collegium Gostomianum-->
+          <!--<br>-->
+          <!--ul. Jana Długosza 7-->
+          <!--<br>-->
+          <!--27-600 Sandomierz-->
+        <!--</div>-->
+
+        <!--<div class="row my-2 px-3">-->
+
+          <!--<div class="col-lg-6 my-3 px-0">-->
+          <!--<i class="fas fa-phone"></i>-->
+          <!--<a href="tel:158325246" class="text-white">(15) 832-52-45</a>-->
+          <!--</div>-->
+
+          <!--<div class="col-lg-6 my-3 px-0">-->
+            <!--<i class="fas fa-envelope"></i>-->
+            <!--<a href="mailto:1losand@lo1.sandomierz.pl" class="text-white">1losand@lo1.sandomierz.pl</a>-->
+          <!--</div>-->
+
+        <!--</div>-->
+
+
+      <!--</div>-->
+    <!--</div>-->
+    <!--<div class="row">-->
+      <!--<div class="col-md-12 mt-4">-->
+        <!--<p class="text-center">© Copyright 2018 Marcin Zasuwa, Marcin Saja, Piotr Nowak - Wszelkie Prawa Zastrzeżone.</p>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</div>-->
 
 <!-- jQuery library -->
 <script src="js/jquery-3.3.1.min.js"></script>
 <!-- Bootstrap JavaScript and Popper JS (https://popper.js.org) -->
 <script src="js/bootstrap.bundle.min.js"></script>
+<!--jQuery script-->
+<script src="js/script.js"></script>
 
 </body>
 </html>
