@@ -1,5 +1,5 @@
 .textsize{
-	font-size: 1.5em;
+	font-size: 1.8em;
 	color: white;
 }
 .textpadding{
@@ -12,8 +12,7 @@
 .fonttype{
 	font-family: 'Archivo', sans-serif;
 }
-.abspadding{
-	padding-left: 120px;
+.abscolor{
 	color: #eae8e8;
 }
 .liborderone{
@@ -38,7 +37,7 @@
 	transition: .5s;
 }
 .secondshadow{
-	margin-top: 123px;
+	
 	box-shadow: 5px 5px 5px rgba(40, 40, 40, 0.1);
 }
 .secondafont{
@@ -52,10 +51,10 @@
 	color: #000;
 }
 .flt{
-	float: right;
+	
 }
 .abssize{
-	font-size: 1.2em;
+	font-size: 1.4em;
 }
 
 .cimgsize{
@@ -255,4 +254,12 @@ h1,h2,h3{
 	border: 2px solid black;
 	border-radius: 10px;
 	border-color: #343a40;
+}
+
+.visibilitynavoff{
+	opacity: 0;
+}
+
+.logpadding{
+	padding-top: 10px;
 }
