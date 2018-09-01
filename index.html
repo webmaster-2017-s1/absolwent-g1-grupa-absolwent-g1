@@ -76,10 +76,10 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav navsize fonttype">
         <li class="nav-item libordertwo navpadding navhover">
-          <a class="nav-link text-white" href="#">Wydarzenia</a>
+          <a class="nav-link text-white" href="#news">Wydarzenia</a>
         </li>
         <li class="nav-item liborderone navpadding navhover">
-          <a class="nav-link text-white" href="#">Kontakt</a>
+          <a class="nav-link text-white" href="#footbar">Kontakt</a>
         </li>
         <li class="nav-item liborderthree navpadding navhover">
           <a class="nav-link text-white" href="login.html">Zaloguj się</a>
@@ -228,7 +228,7 @@
     </div>
   </div>
 
-  <div class="news">
+  <div class="news" id="news">
     <h1 class="sectionheading">NAJNOWSZE WIADOMOŚCI I OGŁOSZENIA</h1>
     <div>
       <div class="row newscontent">
@@ -279,7 +279,7 @@
 </div>
 
 <!-- Stopka strony: copyrights, dodatkowe linki itp. -->
-<div class="container-fluid bg-dark">
+<div class="container-fluid bg-dark" id="footbar">
   <div class="container">
   <div class="text-white bg-dark">
     <div class="row">
@@ -291,7 +291,7 @@
         <ul class="list-unstyled">
           <a href="#" class="text-white">Strona główna</a>
           <br>
-          <a href="#" class="text-white">Wydarzenia</a>
+          <a href="#news" class="text-white">Wydarzenia</a>
           <br>
           <a href="#" class="text-white">Zaloguj się</a>
         </ul>
@@ -347,6 +347,10 @@
 <script src="js/jquery-3.3.1.min.js"></script>
 <!-- Bootstrap JavaScript and Popper JS (https://popper.js.org) -->
 <script src="js/bootstrap.bundle.min.js"></script>
+<!--jQuery Easing-->
+<script src="js/jquery.easing.min.js"></script>
+
+<script src="js/script.js"></script>
 
 <!-- Skrypty -->
 <script type="text/javascript">
@@ -361,6 +365,7 @@
     });
 
 </script>
+
 
 </body>
 </html>

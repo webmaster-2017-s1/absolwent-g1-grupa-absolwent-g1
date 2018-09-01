@@ -247,3 +247,12 @@ h1,h2,h3{
 	right: 0;
 	padding-bottom: 2%;
 }
+
+.galleryfont{
+	font-family: 'Sansita', sans-serif;
+}
+.gallerybordr{
+	border: 2px solid black;
+	border-radius: 10px;
+	border-color: #343a40;
+}
