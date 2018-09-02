@@ -48,7 +48,7 @@
     var e = document.createElement("script");
     e.src = "http://browser-update.org/update.min.js";
     document.body.appendChild(e);
-  };
+  }
   try {
     document.addEventListener("DOMContentLoaded", $buo_f, false)
   }
@@ -77,42 +77,10 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav navsize fonttype">
         <li class="nav-item libordertwo navpadding navhover">
-          <a class="nav-link text-white" href="#news">Wydarzenia</a>
+          <a class="nav-link text-white" href="index.html#news">Wydarzenia</a>
         </li>
         <li class="nav-item liborderone navpadding navhover">
-          <a class="nav-link text-white" href="#footbar">Kontakt</a>
-        </li>
-        <li class="nav-item liborderthree navpadding navhover">
-          <a class="nav-link text-white" href="login.html">Zaloguj się</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<!-- Ukrywacz -->
-<nav class="navbar navbar-expand-lg navbar-light navbackground p-2 visibilitynavoff">
-  <div class="container">
-    <a class="navbar-brand" href="#">
-      <img class="" src="img/logo.png" width="80" height="80">                      
-    </a>
-    <div class="text-center logpadding">
-      <p class="">
-        <a href="#" class="textsize textpadding fonttype">Collegium Gostomianum</a><br>
-        <a href="#" class="abscolor fonttype abssize flt">Absolwent</a>
-      </p>
-    </div>
-      
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav navsize fonttype">
-        <li class="nav-item libordertwo navpadding navhover">
-          <a class="nav-link text-white" href="#news">Wydarzenia</a>
-        </li>
-        <li class="nav-item liborderone navpadding navhover">
-          <a class="nav-link text-white" href="#footbar">Kontakt</a>
+          <a class="nav-link text-white" href="index.html#footbar">Kontakt</a>
         </li>
         <li class="nav-item liborderthree navpadding navhover">
           <a class="nav-link text-white" href="login.html">Zaloguj się</a>
@@ -122,8 +90,8 @@
   </div>
 </nav>
 <!-- Podnaglowek strony -->
-<div class="container-fluid bg-white secondshadow">
-  <div class="container">
+<div class="container-fluid bg-white secondshadow mt-5 pt-5">
+  <div class="container mt-4">
     <ul class="nav justify-content-center">
       <li class="nav-item">
         <a class="nav-link secondafont libordertwo" href="index.html">Strona główna</a>
@@ -161,19 +129,19 @@
   <hr>
 
 <div class="container col px-5" id="log-form" style="display: block">
-  <form>
+  <form method="post">
   <div class="form-group">
     <label for="email-log">Adres email:</label>
-    <input type="email" class="form-control" id="email-log" placeholder="Wprowadź adres email" required>
+    <input type="email" class="form-control"  name="email" id="email-log" placeholder="Wprowadź adres email" required>
   </div>
   <div class="form-group">
     <label for="password-log">Hasło:</label>
-    <input type="password" class="form-control" id="password-log" placeholder="Wprowadź hasło" required>
+    <input type="password" class="form-control" name="password" id="password-log" placeholder="Wprowadź hasło" required>
   </div>
   <div class="checkbox">
     <label class="pb-2"><input type="checkbox">Zapamiętaj mnie</label>
   </div>
-  <button type="submit" class="btn btn-primary py-1">Zaloguj się</button>
+  <button type="submit" class="btn btn-primary py-1" name="login-user">Zaloguj się</button>
 
   <div class="form-group pt-2">
     <a href="#">Zapomniałeś hasła?</a>
@@ -182,28 +150,24 @@
 </div>
 
 <div class="container col px-5" id="sign-form" style="display: none">
-<form>
+<form method="post">
   <div class="form-group">
-    <label for="name">Imię:</label>
-    <input type="text" class="form-control" id="name" placeholder="Wprowadź imię" required>
-  </div>
-  <div class="form-group">
-    <label for="surname">Imię:</label>
-    <input type="text" class="form-control" id="surname" placeholder="Wprowadź nazwisko" required>
+    <label for="name">Nick:</label>
+    <input type="text" class="form-control" name="username" id="name" placeholder="Wprowadź nick" required>
   </div>
   <div class="form-group">
     <label for="email">Adres email:</label>
-    <input type="email" class="form-control" id="email" placeholder="Wprowadź adres email" required>
+    <input type="email" class="form-control" name="email" id="email" placeholder="Wprowadź adres email" required>
   </div>
 
   <div class="form-group">
     <label for="password">Hasło:</label>
-    <input type="password" class="form-control" id="password" placeholder="Wprowadz hasło" required>
+    <input type="password" class="form-control" name="password" id="password" placeholder="Wprowadz hasło" required>
   </div>
 
   <div class="form-group">
     <label for="r-password">Powtórz hasło</label>
-    <input type="password" class="form-control" id="r-password" placeholder="Wprowadz ponownie hasło" required>
+    <input type="password" class="form-control" name="r-password" id="r-password" placeholder="Wprowadz ponownie hasło" required>
   </div>
 
   <div class="checkbox">
@@ -212,72 +176,11 @@
   <div class="checkbox">
     <label><input type="checkbox">Chcę otrzymywać informacje o Collegium Gostomianum na adres email.</label>
   </div>
-  <button type="submit" class="btn btn-primary">Zarejestruj się</button>
+  <button type="submit" class="btn btn-primary" name="register-user">Zarejestruj się</button>
 </form>
 </div>
 
 </div>
-<!-- Stopka strony: copyrights, dodatkowe linki itp. -->
-<!--<div class="container">-->
-  <!--<div class="text-white bg-dark">-->
-    <!--<div class="row">-->
-      <!--<div class="p-5 col-md-4">-->
-        <!--<i class="material-icons mb-3" style="font-size: 125px">school</i>-->
-        <!--<h3 class="mb-4">Absolwent-->
-          <!--<br>-->
-        <!--</h3>-->
-        <!--<ul class="list-unstyled">-->
-          <!--<a href="#" class="text-white">Strona główna</a>-->
-          <!--<br>-->
-          <!--<a href="#" class="text-white">Wydarzenia</a>-->
-          <!--<br>-->
-          <!--<a href="#" class="text-white">Zaloguj się</a>-->
-        <!--</ul>-->
-      <!--</div>-->
-      <!--<div class="p-5 col-md-8">-->
-        <!--<h3>Chcesz być na bieżąco?</h3>-->
-        <!--<form class="my-4">-->
-          <!--<fieldset class="form-group">-->
-            <!--Otrzymuj informacje o Collegium Gostomianum-->
-            <!--<br>-->
-            <!--<input type="email" class="form-control" placeholder="Podaj email"></fieldset>-->
-          <!--<button type="submit" class="btn btn-outline-light">Wyślij</button>-->
-        <!--</form>-->
-        <!--<h3 class="mt-5">Kontakt-->
-          <!--<br>-->
-        <!--</h3>-->
-        <!--<div class="col-12 my-3 px-0">-->
-          <!--I Liceum Ogólnokształcące Collegium Gostomianum-->
-          <!--<br>-->
-          <!--ul. Jana Długosza 7-->
-          <!--<br>-->
-          <!--27-600 Sandomierz-->
-        <!--</div>-->
-
-        <!--<div class="row my-2 px-3">-->
-
-          <!--<div class="col-lg-6 my-3 px-0">-->
-          <!--<i class="fas fa-phone"></i>-->
-          <!--<a href="tel:158325246" class="text-white">(15) 832-52-45</a>-->
-          <!--</div>-->
-
-          <!--<div class="col-lg-6 my-3 px-0">-->
-            <!--<i class="fas fa-envelope"></i>-->
-            <!--<a href="mailto:1losand@lo1.sandomierz.pl" class="text-white">1losand@lo1.sandomierz.pl</a>-->
-          <!--</div>-->
-
-        <!--</div>-->
-
-
-      <!--</div>-->
-    <!--</div>-->
-    <!--<div class="row">-->
-      <!--<div class="col-md-12 mt-4">-->
-        <!--<p class="text-center">© Copyright 2018 Marcin Zasuwa, Marcin Saja, Piotr Nowak - Wszelkie Prawa Zastrzeżone.</p>-->
-      <!--</div>-->
-    <!--</div>-->
-  <!--</div>-->
-<!--</div>-->
 
 <!-- jQuery library -->
 <script src="js/jquery-3.3.1.min.js"></script>
