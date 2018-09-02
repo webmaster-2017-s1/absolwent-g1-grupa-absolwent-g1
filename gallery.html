@@ -63,16 +63,18 @@
 </script>
 
 <!-- Nagłówek strony: menu, logo, breadcrumbs itp. -->
-<nav class="navbar navbar-expand-lg navbar-light fixed-top navbackground p-3">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top navbackground p-2">
   <div class="container">
     <a class="navbar-brand" href="#">
-      <img src="img/logo.png" width="80" height="80">
-      <div class="flt">
-        <span class="textsize textpadding fonttype">Collegium Gostomianum</span><br>
-        <span class="abspadding fonttype abssize">Absolwent</span>
-      </div>
-
+      <img class="" src="img/logo.png" width="80" height="80">                      
     </a>
+    <div class="text-center logpadding">
+      <p class="">
+        <a href="#" class="textsize textpadding fonttype">Collegium Gostomianum</a><br>
+        <a href="#" class="abscolor fonttype abssize flt">Absolwent</a>
+      </p>
+    </div>
+      
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -80,10 +82,42 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav navsize fonttype">
         <li class="nav-item libordertwo navpadding navhover">
-          <a class="nav-link text-white" href="#">Wydarzenia</a>
+          <a class="nav-link text-white" href="#news">Wydarzenia</a>
         </li>
         <li class="nav-item liborderone navpadding navhover">
-          <a class="nav-link text-white" href="#">Kontakt</a>
+          <a class="nav-link text-white" href="#footbar">Kontakt</a>
+        </li>
+        <li class="nav-item liborderthree navpadding navhover">
+          <a class="nav-link text-white" href="login.html">Zaloguj się</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Ukrywacz -->
+<nav class="navbar navbar-expand-lg navbar-light navbackground p-2 visibilitynavoff">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img class="" src="img/logo.png" width="80" height="80">                      
+    </a>
+    <div class="text-center logpadding">
+      <p class="">
+        <a href="#" class="textsize textpadding fonttype">Collegium Gostomianum</a><br>
+        <a href="#" class="abscolor fonttype abssize flt">Absolwent</a>
+      </p>
+    </div>
+      
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav navsize fonttype">
+        <li class="nav-item libordertwo navpadding navhover">
+          <a class="nav-link text-white" href="#news">Wydarzenia</a>
+        </li>
+        <li class="nav-item liborderone navpadding navhover">
+          <a class="nav-link text-white" href="#footbar">Kontakt</a>
         </li>
         <li class="nav-item liborderthree navpadding navhover">
           <a class="nav-link text-white" href="login.html">Zaloguj się</a>
