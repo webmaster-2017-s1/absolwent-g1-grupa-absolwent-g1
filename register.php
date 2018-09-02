@@ -1,4 +1,5 @@
 <?php
+    session_start();
     require_once ("config.php");
 
     $errors = array();
@@ -36,6 +37,30 @@
             $_SESSION['username']=$username;
             $_SESSION['success']="Jestes teraz zalogowany";
             header('location: index.html');
+        }
+
+    }
+
+//****Login
+    if(isset($_POST['login-user'])){
+        $email=mysqli_real_escape_string($db, $_POST['email']);
+        $password=mysqli_real_escape_string($db, $_POST['password']);
+        
+        $check_user="SELECT * FROM users WHERE email='$email'";
+        $result=mysqli_query($db, $check_user);
+        $user=mysqli_fetch_assoc($result);
+
+        if(mysqli_num_rows($result)==1){
+            if($user['email']==$email & $user['password']==$password){
+                echo "Zalogowano pomyslnie";
+                $_SESSION['username']=$user['username'];
+                $_SESSION['success']="Zalogowany";
+                header('location: index.html');
+            } else{
+                echo "Złe hasło";
+            }
+        }else{
+            echo "Nie ma uzytkownika o takich danych";
         }
 
     }
@@ -170,24 +195,24 @@
     <hr>
 
     <div class="container col px-5" id="log-form" style="display: block">
-<!--        <form method="post">-->
-<!--            <div class="form-group">-->
-<!--                <label for="email-log">Adres email:</label>-->
-<!--                <input type="email" class="form-control" name="email" placeholder="Wprowadź adres email" required>-->
-<!--            </div>-->
-<!--            <div class="form-group">-->
-<!--                <label for="password-log">Hasło:</label>-->
-<!--                <input type="password" class="form-control" name="password" placeholder="Wprowadź hasło" required>-->
-<!--            </div>-->
-<!--            <div class="checkbox">-->
-<!--                <label class="pb-2"><input type="checkbox">Zapamiętaj mnie</label>-->
-<!--            </div>-->
-<!--            <button type="submit" class="btn btn-primary py-1">Zaloguj się</button>-->
-<!---->
-<!--            <div class="form-group pt-2">-->
-<!--                <a href="#">Zapomniałeś hasła?</a>-->
-<!--            </div>-->
-<!--        </form>-->
+        <form method="post">
+            <div class="form-group">
+                <label for="email-log">Adres email:</label>
+                <input type="email" class="form-control" name="email" placeholder="Wprowadź adres email" required>
+            </div>
+            <div class="form-group">
+                <label for="password-log">Hasło:</label>
+                <input type="password" class="form-control" name="password" placeholder="Wprowadź hasło" required>
+            </div>
+            <div class="checkbox">
+                <label class="pb-2"><input type="checkbox">Zapamiętaj mnie</label>
+            </div>
+            <button type="submit" class="btn btn-primary py-1" name="login-user">Zaloguj się</button>
+
+            <div class="form-group pt-2">
+                <a href="#">Zapomniałeś hasła?</a>
+            </div>
+        </form>
     </div>
 
     <div class="container col px-5" id="sign-form" style="display: none">

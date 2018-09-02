@@ -14,17 +14,18 @@ $("#signin").click(function () {
 
 
 $(function () {
-  $('a[href*="#"]').not('[href="#"]').click(function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+  $('a[href*="#"]').not('[href="#"]').click(function () {
+    if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') || location.hostname === this.hostname) {
       var target = $(this.hash);
       if (!target.length) {
         target = $('[name=' + this.hash.slice(1) + ']');
       }
       if (target.length) {
         $('html, body').animate({
-          scrollTop: (target.offset().top - 54)
+          scrollTop: (target.offset().top - 10)
         }, 1000, "easeInOutExpo");
       }
     }
   });
 });
+
