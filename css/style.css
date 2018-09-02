@@ -72,15 +72,14 @@
 }
 
 .logoscroll{
-	margin: 10px;
-	height: 100px;
+	/*margin: 10px;*/
+	/*height: 100px;*/
 	transition: .5s;
 }
 
 .date{
 	width: 20%;
 	height: auto;
-	padding: 0;
 	float: left;
 	padding: 3% 2% 3% 2%;
 }
@@ -107,14 +106,14 @@
 .monthtext{
 	margin: 0;
 	padding: 7.5% 0 7.5% 0;
-	font-size: auto;
+	font-size: auto; /*TODO Do poprawy*/
 }
 
 .daytext{
 	text-align: center;
 	padding: 15% 0 15% 0;
 	margin: 0;
-	font-size: auto;
+	font-size: auto; /*TODO Do poprawy*/
 }
 
 .datelist{
@@ -223,7 +222,7 @@ h1,h2,h3{
 }
 
 .carouseltext{
-	background-color: rgb(205, 163, 79, 0.85);
+	background-color: rgb(205, 163, 79);
 	height: 5%;
 	width: 40%;
 	padding: 0 1% 0 5%;
@@ -251,9 +250,8 @@ h1,h2,h3{
 	font-family: 'Sansita', sans-serif;
 }
 .gallerybordr{
-	border: 2px solid black;
+	border: 2px solid #343a40;
 	border-radius: 10px;
-	border-color: #343a40;
 }
 
 .visibilitynavoff{
@@ -262,4 +260,9 @@ h1,h2,h3{
 
 .logpadding{
 	padding-top: 10px;
+}
+
+#news{
+  margin-top: -90px;
+  padding-top: 90px;
 }
