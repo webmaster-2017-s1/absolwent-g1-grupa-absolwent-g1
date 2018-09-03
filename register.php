@@ -31,8 +31,8 @@
         }
 
         if(count($errors)==0){
-            //TODO Hashing password
-            $sql="INSERT INTO users (username, password, email) VALUES ('$username', '$password', '$email')";
+            $passwordhashed=password_hash($password, PASSWORD_DEFAULT);
+            $sql="INSERT INTO users (username, password, email) VALUES ('$username', '$passwordhashed', '$email')";
             mysqli_query($db, $sql);
             $_SESSION['username']=$username;
             $_SESSION['success']="Jestes teraz zalogowany";
@@ -45,13 +45,13 @@
     if(isset($_POST['login-user'])){
         $email=mysqli_real_escape_string($db, $_POST['email']);
         $password=mysqli_real_escape_string($db, $_POST['password']);
-        
+
         $check_user="SELECT * FROM users WHERE email='$email'";
         $result=mysqli_query($db, $check_user);
         $user=mysqli_fetch_assoc($result);
 
         if(mysqli_num_rows($result)==1){
-            if($user['email']==$email & $user['password']==$password){
+            if($user['email']==$email & password_verify($password, $user['password'])){
                 echo "Zalogowano pomyslnie";
                 $_SESSION['username']=$user['username'];
                 $_SESSION['success']="Zalogowany";
