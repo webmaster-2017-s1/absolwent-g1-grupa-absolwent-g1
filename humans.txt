@@ -3,13 +3,15 @@
 
 # TEAM
 
-    <name> -- <role> -- <email>
+    Marcin Zasuwa -- Project Manager, Web Designer, Web Developer -- marcin.zasuwa@lo1.sandomierz.pl
+    Marcin Saja -- Web Designer, Web Developer -- marcin.saja@lo1.sandomierz.pl
+    Piotr Nowak -- Web Designer, Web Developer -- piotr.nowak@lo1.sandomierz.pl
+
 
 # THANKS
 
-    <name>
 
 # TECHNOLOGY COLOPHON
 
     CSS3, HTML5
-    jQuery, Modernizr, Normalize.css, p5js
+    jQuery, Respond.js, Normalize.css, html5shiv, Bootstrap 4, jQuery Easing
