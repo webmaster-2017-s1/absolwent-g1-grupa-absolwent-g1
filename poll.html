@@ -4,10 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Logowanie - Absolwent Collegium Gostomianum</title>
+  <title>Szablon Bootstrapa</title>
 
   <!-- Czcionki -->
   <link href="https://fonts.googleapis.com/css?family=Archivo" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:500|Sansita:700&amp;subset=latin-ext" rel="stylesheet">
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -49,6 +50,7 @@
     e.src = "http://browser-update.org/update.min.js";
     document.body.appendChild(e);
   }
+
   try {
     document.addEventListener("DOMContentLoaded", $buo_f, false)
   }
@@ -65,8 +67,7 @@
     </div>
     <div class="text-center logpadding">
       <p>
-        <span class="textsize textpadding fonttype">Collegium Gostomianum</span>
-        <br>
+        <span class="textsize textpadding fonttype">Collegium Gostomianum</span><br>
         <span class="abscolor fonttype abssize flt">Absolwent</span>
       </p>
     </div>
@@ -124,65 +125,84 @@
 
 <!-- Treść główna -->
 
-<div class="container col-md-6 px-auto py-5">
-
-  <div class="container col-xs-4 px-5">
-  <button class="btn btn-secondary my-1" id="login">Zaloguj się</button>
-  <button class="btn btn-secondary my-1" id="signin">Zarejestruj się</button>
-  </div>
+<div class="container survey">
+  <h1 class="surveyheading">Ankieta</h1>
   <hr>
+  <form>
+    <div class="form-group">
+      <label>1. Czy wybór szkoły na przestrzeni lat uważasz za udany?</label>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="question1" id="question1a" value="option1">
+        <label class="form-check-label" for="question1a">
+          Tak
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="question1" id="question1b" value="option2">
+        <label class="form-check-label" for="question1b">
+          Nie
+        </label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>2. Czy poleciłbyś/aś szkołę osobie bliskiej?</label>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="question2" id="question2a" value="option1">
+        <label class="form-check-label" for="question2a">
+          Tak
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="question2" id="question2b" value="option2">
+        <label class="form-check-label" for="question2b">
+          Nie
+        </label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>3. Czy kontynuowałeś/aś naukę w szkole wyższej?</label>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="question3" id="question3a" value="option1">
+        <label class="form-check-label" for="question3a">
+          Tak
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="question3" id="question3b" value="option2">
+        <label class="form-check-label" for="question3b">
+          Nie
+        </label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>4. Czy dostałeś/aś się na te studia, gdzie planowałeś/aś?</label>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="question4" id="question4a" value="option1">
+        <label class="form-check-label" for="question4a">
+          Tak
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="question4" id="question4b" value="option2">
+        <label class="form-check-label" for="question4b">
+          Nie
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="question4" id="question4c" value="option2">
+        <label class="form-check-label" for="question4c">
+          Nie studiuję
+        </label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>5. Jeżeli na poprzednie pytanie odpowiedziałeś/aś "Tak" podaj nazwę uczelni na której studiujesz, jeżeli na
+        "Nie" pozostaw puste pole.</label>
+      <input type="text" class="form-control" id="question5" placeholder="Nazwa uczelni">
+    </div>
+  </form>
+  <button class="btn btn-primary" type="submit">Wyślij</button>
 
-<div class="container col px-5" id="log-form" style="display: block">
-  <form method="post">
-  <div class="form-group">
-    <label for="email-log">Adres email:</label>
-    <input type="email" class="form-control"  name="email" id="email-log" placeholder="Wprowadź adres email" required>
-  </div>
-  <div class="form-group">
-    <label for="password-log">Hasło:</label>
-    <input type="password" class="form-control" name="password" id="password-log" placeholder="Wprowadź hasło" required>
-  </div>
-  <div class="checkbox">
-    <label class="pb-2"><input type="checkbox">Zapamiętaj mnie</label>
-  </div>
-  <button type="submit" class="btn btn-primary py-1" name="login-user">Zaloguj się</button>
-
-  <div class="form-group pt-2">
-    <a href="#">Zapomniałeś hasła?</a>
-  </div>
-</form>
-</div>
-
-<div class="container col px-5" id="sign-form" style="display: none">
-<form method="post">
-  <div class="form-group">
-    <label for="name">Nick:</label>
-    <input type="text" class="form-control" name="username" id="name" placeholder="Wprowadź nick" required>
-  </div>
-  <div class="form-group">
-    <label for="email">Adres email:</label>
-    <input type="email" class="form-control" name="email" id="email" placeholder="Wprowadź adres email" required>
-  </div>
-
-  <div class="form-group">
-    <label for="password">Hasło:</label>
-    <input type="password" class="form-control" name="password" id="password" placeholder="Wprowadz hasło" required>
-  </div>
-
-  <div class="form-group">
-    <label for="r-password">Powtórz hasło</label>
-    <input type="password" class="form-control" name="r-password" id="r-password" placeholder="Wprowadz ponownie hasło" required>
-  </div>
-
-  <div class="checkbox">
-    <label><input type="checkbox" required>Wyrażam zgodę na przetwarzanie moich danych osobowych.</label>
-  </div>
-  <div class="checkbox">
-    <label><input type="checkbox">Chcę otrzymywać informacje o Collegium Gostomianum na adres email.</label>
-  </div>
-  <button type="submit" class="btn btn-primary" name="register-user">Zarejestruj się</button>
-</form>
-</div>
 
 </div>
 
