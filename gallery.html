@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Szablon Bootstrapa</title>
+  <title>Galeria - Absolwent Collegium Gostomianum</title>
 
   <!-- Czcionki -->
   <link href="https://fonts.googleapis.com/css?family=Archivo" rel="stylesheet">
@@ -32,7 +32,6 @@
   <!-- twoje style -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
-  <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
 
 
 </head>
@@ -54,6 +53,7 @@
     e.src = "http://browser-update.org/update.min.js";
     document.body.appendChild(e);
   }
+
   try {
     document.addEventListener("DOMContentLoaded", $buo_f, false)
   }
@@ -65,13 +65,14 @@
 <!-- Nagłówek strony: menu, logo, breadcrumbs itp. -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top navbackground p-2">
   <div class="container">
-    <a class="navbar-brand" href="#">
-      <img class="" src="img/logo.png" width="80" height="80">
-    </a>
+    <div class="navbar-brand" href="index.html">
+      <img src="img/logo.png" width="80" height="80">
+    </div>
     <div class="text-center logpadding">
-      <p class="">
-        <a href="#" class="textsize textpadding fonttype">Collegium Gostomianum</a><br>
-        <a href="#" class="abscolor fonttype abssize flt">Absolwent</a>
+      <p>
+        <span class="textsize textpadding fonttype">Collegium Gostomianum</span>
+        <br>
+        <span class="abscolor fonttype abssize flt">Absolwent</span>
       </p>
     </div>
 
@@ -85,7 +86,7 @@
           <a class="nav-link text-white" href="index.html#news">Wydarzenia</a>
         </li>
         <li class="nav-item liborderone navpadding navhover">
-          <a class="nav-link text-white" href="index.html#footbar">Kontakt</a>
+          <a class="nav-link text-white" href="#footbar">Kontakt</a>
         </li>
         <li class="nav-item liborderthree navpadding navhover">
           <a class="nav-link text-white" href="login.html">Zaloguj się</a>
@@ -117,7 +118,10 @@
         <a class="nav-link secondafont libordertwo" href="#">Dokumenty</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link secondafont liborderone" href="#">Archiwum</a>
+        <a class="nav-link secondafont libordertwo" href="#">Archiwum</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link secondafont liborderone" href="poll.html">Ankieta</a>
       </li>
     </ul>
   </div>
@@ -127,65 +131,23 @@
   <h1 class="p-5">Galeria Collegium Gostomianum</h1>
 </div>
 
-<div class="container-fluid">
+<div class="container-fluid mx-4 p-5">
 
   <div class="container text-center">
     <h2 class="mb-5">← 2018 →</h2>
   </div>
 
-  <div class="row text-center mb-3">
-    <div class="col-md-3">
+  <div class="d-flex flex-row justify-content-center flex-wrap">
+    <div class="p-3">
       <a href="img/cg1.jpg" data-lightbox="mygallery"><img class="galleryimg rounded" src="img/cg1.jpg" width="425"
                                                            height="250"></a>
     </div>
-    <div class="col-md-3">
+    <div class="p-3">
       <a href="img/cg2.jpg" data-lightbox="mygallery"><img class="galleryimg rounded" src="img/cg2.jpg" width="425"
                                                            height="250"></a>
     </div>
-    <div class="col-md-3">
+    <div class="p-3">
       <a href="img/cg3.jpg" data-lightbox="mygallery"><img class="galleryimg rounded" src="img/cg3.jpg" width="425"
-                                                           height="250"></a>
-    </div>
-    <div class="col-md-3">
-      <a href="img/cg6.jpg" data-lightbox="mygallery"><img class="galleryimg rounded" src="img/cg6.jpg" width="425"
-                                                           height="250"></a>
-    </div>
-  </div>
-
-  <div class="row text-center mb-3">
-    <div class="col-md-3">
-      <a href="img/cg1.jpg" data-lightbox="mygallery"><img class="galleryimg rounded" src="img/cg1.jpg" width="425"
-                                                           height="250"></a>
-    </div>
-    <div class="col-md-3">
-      <a href="img/cg2.jpg" data-lightbox="mygallery"><img class="galleryimg rounded" src="img/cg2.jpg" width="425"
-                                                           height="250"></a>
-    </div>
-    <div class="col-md-3">
-      <a href="img/cg4.jpg" data-lightbox="mygallery"><img class="galleryimg rounded" src="img/cg4.jpg" width="425"
-                                                           height="250"></a>
-    </div>
-    <div class="col-md-3">
-      <a href="img/cg5.jpg" data-lightbox="mygallery"><img class="galleryimg rounded" src="img/cg5.jpg" width="425"
-                                                           height="250"></a>
-    </div>
-  </div>
-
-  <div class="row text-center mb-3">
-    <div class="col-md-3">
-      <a href="img/cg1.jpg" data-lightbox="mygallery"><img class="galleryimg rounded" src="img/cg1.jpg" width="425"
-                                                           height="250"></a>
-    </div>
-    <div class="col-md-3">
-      <a href="img/cg2.jpg" data-lightbox="mygallery"><img class="galleryimg rounded" src="img/cg2.jpg" width="425"
-                                                           height="250"></a>
-    </div>
-    <div class="col-md-3">
-      <a href="img/cg3.jpg" data-lightbox="mygallery"><img class="galleryimg rounded" src="img/cg3.jpg" width="425"
-                                                           height="250"></a>
-    </div>
-    <div class="col-md-3">
-      <a href="img/cg6.jpg" data-lightbox="mygallery"><img class="galleryimg rounded" src="img/cg6.jpg" width="425"
                                                            height="250"></a>
     </div>
   </div>
@@ -194,40 +156,17 @@
     <h2 class="mb-5">← 2017 →</h2>
   </div>
 
-  <div class="row text-center mb-3">
-    <div class="col-md-3">
-      <a href="img/cg1.jpg" data-lightbox="mygallery"><img class="galleryimg rounded" src="img/cg1.jpg" width="425"
+  <div class="d-flex flex-row justify-content-center flex-wrap">
+    <div class="p-3">
+      <a href="img/cg1.jpg" data-lightbox="mygallery"><img class="galleryimg rounded" src="img/cg4.jpg" width="425"
                                                            height="250"></a>
     </div>
-    <div class="col-md-3">
-      <a href="img/cg2.jpg" data-lightbox="mygallery"><img class="galleryimg rounded" src="img/cg2.jpg" width="425"
+    <div class="p-3">
+      <a href="img/cg2.jpg" data-lightbox="mygallery"><img class="galleryimg rounded" src="img/cg5.jpg" width="425"
                                                            height="250"></a>
     </div>
-    <div class="col-md-3">
-      <a href="img/cg4.jpg" data-lightbox="mygallery"><img class="galleryimg rounded" src="img/cg4.jpg" width="425"
-                                                           height="250"></a>
-    </div>
-    <div class="col-md-3">
-      <a href="img/cg5.jpg" data-lightbox="mygallery"><img class="galleryimg rounded" src="img/cg5.jpg" width="425"
-                                                           height="250"></a>
-    </div>
-  </div>
-
-  <div class="row text-center mb-3">
-    <div class="col-md-3">
-      <a href="img/cg1.jpg" data-lightbox="mygallery"><img class="galleryimg rounded" src="img/cg1.jpg" width="425"
-                                                           height="250"></a>
-    </div>
-    <div class="col-md-3">
-      <a href="img/cg2.jpg" data-lightbox="mygallery"><img class="galleryimg rounded" src="img/cg2.jpg" width="425"
-                                                           height="250"></a>
-    </div>
-    <div class="col-md-3">
-      <a href="img/cg3.jpg" data-lightbox="mygallery"><img class="galleryimg rounded" src="img/cg3.jpg" width="425"
-                                                           height="250"></a>
-    </div>
-    <div class="col-md-3">
-      <a href="img/cg6.jpg" data-lightbox="mygallery"><img class="galleryimg rounded" src="img/cg6.jpg" width="425"
+    <div class="p-3">
+      <a href="img/cg3.jpg" data-lightbox="mygallery"><img class="galleryimg rounded" src="img/cg6.jpg" width="425"
                                                            height="250"></a>
     </div>
   </div>
@@ -236,21 +175,17 @@
     <h2 class="mb-5">← 2016 →</h2>
   </div>
 
-  <div class="row text-center mb-3">
-    <div class="col-md-3">
+  <div class="d-flex flex-row justify-content-center flex-wrap">
+    <div class="p-3">
       <a href="img/cg1.jpg" data-lightbox="mygallery"><img class="galleryimg rounded" src="img/cg1.jpg" width="425"
                                                            height="250"></a>
     </div>
-    <div class="col-md-3">
+    <div class="p-3">
       <a href="img/cg2.jpg" data-lightbox="mygallery"><img class="galleryimg rounded" src="img/cg2.jpg" width="425"
                                                            height="250"></a>
     </div>
-    <div class="col-md-3">
+    <div class="p-3">
       <a href="img/cg3.jpg" data-lightbox="mygallery"><img class="galleryimg rounded" src="img/cg3.jpg" width="425"
-                                                           height="250"></a>
-    </div>
-    <div class="col-md-3">
-      <a href="img/cg6.jpg" data-lightbox="mygallery"><img class="galleryimg rounded" src="img/cg6.jpg" width="425"
                                                            height="250"></a>
     </div>
   </div>
@@ -321,6 +256,11 @@
 <script src="js/jquery-3.3.1.min.js"></script>
 <!-- Bootstrap JavaScript and Popper JS (https://popper.js.org) -->
 <script src="js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
+<!--jQuery Easing-->
+<script src="js/jquery.easing.min.js"></script>
+<!-- Skrypty -->
+<script src="js/script.js"></script>
 
 
 </body>

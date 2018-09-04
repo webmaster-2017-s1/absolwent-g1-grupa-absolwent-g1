@@ -100,11 +100,7 @@
                 <li class="nav-item liborderthree navpadding navhover">
                     <a class="nav-link text-white" href="login.html">
                         <?php
-                        if(isset($_SESSION['username'])){
                             echo $_SESSION['username'];
-                        }else{
-                            echo "Zaloguj się";
-                        }
                         ?>
                     </a>
                 </li>
@@ -143,11 +139,83 @@
 
 <!-- Treść główna -->
 
-<div class="container">
-
-    Tu będzie ankieta. Jeżeli czytasz ten tekst to znaczy, że jesteś zalogowany.
-    Zalogowano jako: <?php echo $_SESSION['username']?>
-
+<div class="container survey">
+    <h1 class="surveyheading">Ankieta</h1>
+    <hr>
+    <form method="post">
+        <div class="form-group">
+            <label>1. Czy wybór szkoły na przestrzeni lat uważasz za udany?</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="question1" id="question1a" value="option1">
+                <label class="form-check-label" for="question1a">
+                    Tak
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="question1" id="question1b" value="option2">
+                <label class="form-check-label" for="question1b">
+                    Nie
+                </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>2. Czy poleciłbyś/aś szkołę osobie bliskiej?</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="question2" id="question2a" value="option1">
+                <label class="form-check-label" for="question2a">
+                    Tak
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="question2" id="question2b" value="option2">
+                <label class="form-check-label" for="question2b">
+                    Nie
+                </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>3. Czy kontynuowałeś/aś naukę w szkole wyższej?</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="question3" id="question3a" value="option1">
+                <label class="form-check-label" for="question3a">
+                    Tak
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="question3" id="question3b" value="option2">
+                <label class="form-check-label" for="question3b">
+                    Nie
+                </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>4. Czy dostałeś/aś się na te studia, gdzie planowałeś/aś?</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="question4" id="question4a" value="option1">
+                <label class="form-check-label" for="question4a">
+                    Tak
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="question4" id="question4b" value="option2">
+                <label class="form-check-label" for="question4b">
+                    Nie
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="question4" id="question4c" value="option2">
+                <label class="form-check-label" for="question4c">
+                    Nie studiuję
+                </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>5. Jeżeli na poprzednie pytanie odpowiedziałeś/aś "Tak" podaj nazwę uczelni na której studiujesz, jeżeli na
+                "Nie" pozostaw puste pole.</label>
+            <input type="text" class="form-control" id="question5" placeholder="Nazwa uczelni">
+        </div>
+    </form>
+    <button class="btn btn-primary" type="submit">Wyślij</button>
 </div>
 
 <!-- jQuery library -->

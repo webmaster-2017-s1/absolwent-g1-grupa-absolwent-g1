@@ -16,7 +16,7 @@
         if($password!=$rpassword){
             array_push($errors, "Hasła nie pasuja");
         }
-        $check_user="SELECT * FROM users WHERE username='$username' OR email='$email' LIMIT 1";
+        $check_user="SELECT * FROM users WHERE username='$username' OR email='$email'";
         $result=mysqli_query($db, $check_user);
         $user=mysqli_fetch_assoc($result);
 
@@ -50,17 +50,12 @@
         $result=mysqli_query($db, $check_user);
         $user=mysqli_fetch_assoc($result);
 
-        if(mysqli_num_rows($result)==1){
-            if($user['email']==$email & password_verify($password, $user['password'])){
+        if(mysqli_num_rows($result)==1 & $user['email']==$email & password_verify($password, $user['password'])){
                 echo "Zalogowano pomyslnie";
                 $_SESSION['username']=$user['username'];
                 $_SESSION['success']="Zalogowany";
                 header('location: index.html');
-            } else{
-                echo "Złe hasło";
-            }
-        }else{
-            echo "Nie ma uzytkownika o takich danych";
+
         }
 
     }
