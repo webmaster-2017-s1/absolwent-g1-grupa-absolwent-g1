@@ -2,9 +2,6 @@
 	font-size: 1.8em;
 	color: white;
 }
-.textpadding{
-	padding-left: 15px;
-}
 .navsize{
 	font-size: 1.2em;
 	color: white;
@@ -268,4 +265,13 @@ h1,h2,h3{
 
 .surveyheading{
 	text-align: center;
+}
+
+@media (max-height: 520px) {
+	.textsize{
+		font-size: 1.1em;
+	}
+	.abssize{
+		font-size: 0.85em;
+	}
 }
